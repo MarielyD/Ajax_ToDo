@@ -1,0 +1,5 @@
+// grab modal body
+$('.modal-title').html("Edit Task #<%= @task.id %>")
+$('.modal-body').html("<%= j render 'form', task: @task %>")
+$('.modal-footer .btn-primary').show()
+$('.modal').modal()

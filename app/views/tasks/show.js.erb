@@ -1,0 +1,4 @@
+$('.modal-title').html("Task #<%= @task.id %>")
+$('.modal-body').html("<%= j render @task %>")
+$('.modal-footer .btn-primary').hide()
+$('.modal').modal()
